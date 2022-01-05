@@ -53,9 +53,8 @@
                                             <tr>
                                                 <td><strong><?=$this->lang->line('order_image')?></strong></td>
                                                 <td><strong><?=$this->lang->line('order_book')?></strong></td>
-                                                <td><strong><?=$this->lang->line('order_unit_price')?></strong></td>
-                                                <td><strong><?=$this->lang->line('order_quantity')?></strong></td>
-                                                <td><strong><?=$this->lang->line('order_total')?></strong></td>
+                                                <td><strong><?=$this->lang->line('order_date')?></strong></td>
+                                                <!-- <td><strong><?=$this->lang->line('return_date')?></strong></td> -->
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -65,12 +64,11 @@
                                                         <img class="checkoutimage rounded mx-auto d-block" src="<?=app_image_link($orderitem->coverphoto,'uploads/storebook/','storebook.jpg')?>">
                                                     </td>
                                                     <td><?=$orderitem->name?></td>
-                                                    <td><?=$orderitem->unit_price?></td>
-                                                    <td><?=$orderitem->quantity?></td>
-                                                    <td class="text-bold"><?=$orderitem->subtotal?></td>
+                                                    <td><?=$orderitem->create_date?></td>
+                                                    <!-- <td class="text-bold"><?=strtotime($orderitem->create_date)->format('Y-m-d')->modify('next thursday')?></td> -->
                                                 </tr>
                                             <?php } } ?>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td colspan="4" class="text-right">
                                                     <?=$this->lang->line('order_delivery_charge')?>
                                                 </td>
@@ -101,7 +99,7 @@
                                                 <td colspan="2" class="text-left">
                                                     <span><strong><?=$this->lang->line('order_payment_amount')?>: </strong><?=app_amount_format($order->paid_amount)?></span>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </main>

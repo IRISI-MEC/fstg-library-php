@@ -51,7 +51,7 @@
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                    <tfoot>
+                                    <!-- <tfoot>
                                         <tr class="order_total">
                                             <th colspan="2"><?=$this->lang->line('order_delivery_charge')?></th>
                                             <th><strong><?=app_amount_format($generalsetting->delivery_charge) ?></strong></th>
@@ -64,7 +64,7 @@
                                             <th colspan="2"><?=$this->lang->line('order_order_total')?></th>
                                             <th><strong><?=app_amount_format($order->total + $generalsetting->delivery_charge); ?></strong></th>
                                         </tr>
-                                    </tfoot>
+                                    </tfoot> -->
                                 </table>
                             </div>
                         </div>

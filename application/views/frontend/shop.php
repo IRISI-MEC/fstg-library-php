@@ -24,15 +24,13 @@
 							                <img class="book-thumbail-image" src="<?=app_image_link($storebook->coverphoto, 'uploads/storebook/', 'storebook.jpg')?>" alt="single-book" />
 							            </a>
 							            <span class="book-badge-label">New</span>
-							            <span class="book-badge-price"><?=$storebook->price?></span>
 							        </div>
 							        <div class="book-content">
 							            <a href="<?=base_url('frontend/single/'.$storebook->storebookID)?>" class="book-title">
 							            	<?=$storebook->name?>
 							            </a>
 							            <div class="book-actions">
-						                    <a class="btn btn-outline-success btn-sm" href="<?=base_url('frontend/single/'.$storebook->storebookID)?>"><i class="fa fa-eye"></i></a>
-						                    <a class="btn btn-outline-success btn-sm" href="<?=base_url('frontend/addcart/'.$storebook->storebookID)?>"><i class="fa fa-cart-plus"></i></a>
+						                    <a class="btn btn-outline-dark btn-sm" href="<?=base_url('frontend/single/'.$storebook->storebookID)?>"><i class="fa fa-eye"></i></a>
 							            </div>
 							        </div>
 							    </div>

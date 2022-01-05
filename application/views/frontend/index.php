@@ -8,7 +8,7 @@
 		</div>
 		<div class="row">
 			<?php foreach($storebookcategorys as $storebookcategory) { ?>
-				<div class="col-sm-2">
+				<div class="col-sm-4">
 				    <div class="single-book-category">
 				        <div class="book-category-image">
 				            <a href="<?=base_url('frontend/shop?category='.$storebookcategory->storebookcategoryID)?>">
@@ -35,7 +35,7 @@
 		</div>
 		<div class="row">
 			<?php foreach($bookcategorys as $bookcategory) { ?>
-				<div class="col-sm-2">
+				<div class="col-sm-3">
 				    <div class="single-book-category">
 				        <div class="book-category-image">
 				            <img class="book-category-thumbnail-image" src="<?=app_image_link($bookcategory->coverphoto,'uploads/bookcategory/','bookcategory.jpg')?>" alt="<?=$bookcategory->name?>" />

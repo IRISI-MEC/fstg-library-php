@@ -7,6 +7,7 @@ class Frontend extends Frontend_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->model('member_m');
         $this->load->model('ebook_m');
         $this->load->model('storebook_m');
         $this->load->model('newsletter_m');
@@ -335,6 +336,7 @@ class Frontend extends Frontend_Controller
     {
         $this->data['storebook']       = $this->storebook_m->get_single_storebook($storebookID);
         $this->data['storebookimages'] = $this->storebookimage_m->get_order_by_storebookimage(['storebookID' => $storebookID]);
+        $this->data["allowedToReserve"] = $this->validateReservation();
         $this->data["subview"]         = "frontend/single";
         $this->load->view('_frontend_layout', $this->data);
     }
@@ -698,6 +700,68 @@ class Frontend extends Frontend_Controller
             ),
         );
         return $rules;
+    }
+
+    public function reserve($storebookID)
+    {
+        $memberID = $this->session->userdata('loginmemberID');
+        if ((int) $memberID) {
+            $this->data['member'] = $this->member_m->get_single_member(array('memberID' => $memberID));
+        }
+
+        if ($storebookID) {
+            // $rules = $this->rules_checkout();
+            // $this->form_validation->set_rules($rules);
+            // if ($this->form_validation->run() == false) {
+            //     $this->data["subview"] = "frontend/checkout";
+            //     $this->load->view('_frontend_layout', $this->data);
+            // } else {
+                $order['memberID']         = $this->session->userdata('loginmemberID');
+                $order['name']             = $this->data['member']->name;
+                $order['mobile']           = $this->data['member']->phone;
+                $order['email']            = $this->data['member']->email;
+                $order['address']          = $this->data['member']->address;
+                // $order['delivery_charge']  = $this->data['generalsetting']->delivery_charge;
+                // $order['subtotal']         = $this->cart->total();
+                // $order['total']            = $this->cart->total() + $order['delivery_charge'];
+                $order['payment_status']   = 5;
+                // $order['payment_method']   = $this->input->post('payment_method');
+                $order['paid_amount']      = 0;
+                $order['discounted_price'] = 0;
+                $order['status']           = 5;
+                // $order['notes']            = $this->input->post('notes');
+                $order['create_date']      = date('Y-m-d H:i:s');
+                $order['modify_date']      = date('Y-m-d H:i:s');
+
+                $this->order_m->insert_order($order);
+                $orderID = $this->db->insert_id();
+
+                // foreach ($cart_contents as $cart_content) {
+                    $orderitem['orderID']     = $orderID;
+                    $orderitem['storebookID'] = $storebookID;
+                    $orderitem['quantity']    = 1;
+                    // $orderitem['unit_price']  = $['pricecart_content'];
+                    // $orderitem['subtotal']    = $cart_content['subtotal'];
+                    $orderitem['create_date'] = date('Y-m-d H:i:s');
+                    $orderitem['modify_date'] = date('Y-m-d H:i:s');
+
+                    $this->orderitem_m->insert_orderitem($orderitem);
+                // }
+                // $this->cart->destroy();
+                // $this->session->set_userdata('stripeToken', $this->input->post('stripeToken'));
+                redirect(base_url('frontend/payment/' . $orderID));
+            // }
+        } else {
+            $this->data["subview"] = "frontend/checkout";
+            $this->load->view('_frontend_layout', $this->data);
+        }
+    }
+
+    public function validateReservation()
+    {
+        $exist1 = $this->order_m->get_single_order(['memberID' => $this->session->userdata('loginmemberID'), 'status' => 5]);
+        $exist2 = $this->order_m->get_single_order(['memberID' => $this->session->userdata('loginmemberID'), 'status' => 20]);
+        return (is_null($exist1) && is_null($exist2));
     }
 
 }

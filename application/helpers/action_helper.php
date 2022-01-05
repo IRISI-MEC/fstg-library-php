@@ -681,11 +681,10 @@ function orderStatusArray()
 {
     return [
         '5'  => 'Pending',
-        '10' => 'Cancel',
-        '15' => 'Reject',
-        '20' => 'Accept',
-        '25' => 'Process',
-        '30' => 'Completed',
+        '10' => 'Canceled',
+        '15' => 'Rejected',
+        '20' => 'Accepted',
+        '25' => 'Returned',
     ];
 }
 

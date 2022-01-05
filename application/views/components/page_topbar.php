@@ -41,26 +41,10 @@
                           </a>
                         </li>
                         <li>
-                          <a href="<?=base_url('dashboard/langswitch/bengali')?>">
-                            <h3>
-                                <img class="languageimage" src="<?=base_url('uploads/language/bengali.png')?>" alt="">
-                                Bangla <?=$language=='bengali' ? "<i class='fa fa-check'></i>" : ""?> 
-                            </h3>
-                          </a>
-                        </li>
-                        <li>
                           <a href="<?=base_url('dashboard/langswitch/english')?>">
                             <h3>
                                 <img class="languageimage" src="<?=base_url('uploads/language/english.png')?>" alt="">
                                 English <?=$language=='english' ? "<i class='fa fa-check'></i>" : ""?>
-                            </h3>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="<?=base_url('dashboard/langswitch/hindi')?>">
-                            <h3>
-                                <img class="languageimage" src="<?=base_url('uploads/language/hindi.png')?>" alt="">
-                                Hindi <?=$language=='hindi' ? "<i class='fa fa-check'></i>" : ""?>
                             </h3>
                           </a>
                         </li>

@@ -19,7 +19,7 @@
                             <label for="password"><?=$this->lang->line('frontend_password')?></label> <span class="text-danger">*</span>
                             <input name="password" type="password" class="form-control <?=form_error('password') ? 'is-invalid' : ''?>" placeholder="Enter password" id="password" value="<?=set_value('password')?>">
                         </div>
-                        <button type="submit" class="btn btn-success btn-block"><?=$this->lang->line('frontend_login')?></button>
+                        <button type="submit" class="btn btn-block" style="background: #cd5237; color: #fff; v"><?=$this->lang->line('frontend_login')?></button>
                     </form>
                 </div>
             </div>

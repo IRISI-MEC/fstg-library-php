@@ -15,6 +15,7 @@ $lang['order_status'] = "Status";
 
 $lang['order_invoice']             = "Invoice";
 $lang['order_date']                = "Date";
+$lang['return_date']               = "Return Date";
 $lang['order_invoice_no']          = "Invoice no";
 $lang['order_deliver_to']          = "Deliver to";
 $lang['order_invoice_to']          = "Invoice to";

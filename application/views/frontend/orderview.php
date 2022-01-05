@@ -65,7 +65,7 @@
 					                                <td class="text-bold"><?=app_amount_format($orderitem->subtotal)?></td>
 					                            </tr>
 				                        	<?php } } ?>
-				                            <tr>
+				                            <!-- <tr>
 				                                <td colspan="4" class="text-right">
 				                                	<?=$this->lang->line('frontend_delivery_charge')?>
 				                                </td>
@@ -96,7 +96,7 @@
 				                            	<td colspan="2" class="text-left">
 				                            		<span><strong><?=$this->lang->line('frontend_payment_amount')?>: </strong><?=app_amount_format($order->paid_amount)?></span>
 				                            	</td>
-				                            </tr>
+				                            </tr> -->
 				                        </tbody>
 					                </table>
 							    </main>

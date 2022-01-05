@@ -32,14 +32,18 @@
                                 <?=$storebook->notes?>
                             </p>
                             <div class="product-quantity">
-                                <form action="<?=base_url('frontend/addcart/'.$storebook->storebookID)?>" method="POST">
-                                    <div class="input-group mb-3">
-                                      <input name="qty" type="number" min="1" value="1" class="form-control" placeholder="Qty" />
-                                      <div class="input-group-append">
-                                        <button class="btn btn-danger"><i class="fa fa-cart-plus"></i> Add Cart</button>
-                                      </div>
-                                    </div>
-                                </form>
+                                <?php if ($allowedToReserve) { ?> 
+                                    <form action="<?=base_url('frontend/reserve/'.$storebook->storebookID)?>" method="POST">
+                                        <div class="input-group mb-3">
+                                        <!-- <input name="qty" type="number" min="1" value="1" class="form-control" placeholder="Qty" /> -->
+                                            <div class="input-group-append">
+                                                <button class="btn btn-danger"><i class="fa fa-cart-plus"></i> Reserver</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                <?php } else { ?>
+                                    <label style="color: red;">You are not allowed to reserve</p>
+                                <?php } ?>
                             </div>
                             <div class="product-stock">
                                 <!-- <span><i class="fa fa-check"></i> IN STOCK</span> -->
@@ -63,7 +67,7 @@
                 <div class="col-sm-12">
                     <div class="main-book-details">
                         <ul class="nav book-details-navs" role="tablist">
-                            <li><a data-toggle="tab" href="#description"><?=$this->lang->line('frontend_product_details')?></a></li>
+                            <li><a data-toggle="tab" href="#description" style="background: #35858B;"><?=$this->lang->line('frontend_product_details')?></a></li>
                         </ul>
                         <div class="tab-content book-details-content">
                             <div id="description" class="tab-pane fade show active">

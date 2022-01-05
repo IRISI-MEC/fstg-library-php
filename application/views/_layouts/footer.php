@@ -25,20 +25,8 @@
 
 	<section class="footer-bottom">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<p><?=$generalsetting->copyright_by?></p>
-				</div>
-				<div class="col-sm-6 footer-bootom-menu">
-					<ul>
-						<li><a class="<?=$activemenu=='index' ? 'active' : ''?>" href="<?=base_url('frontend/index')?>"><?=$this->lang->line('frontend_home')?></a></li>
-						<li><a class="<?=$activemenu=='ebook' ? 'active' : ''?>" href="<?=base_url('frontend/ebook')?>"><?=$this->lang->line('frontend_ebook')?></a></li>
-						<li><a class="<?=$activemenu=='book' ? 'active' : ''?>" href="<?=base_url('frontend/book')?>"><?=$this->lang->line('frontend_book')?></a></li>
-						<li><a class="<?=$activemenu=='shop' ? 'active' : ''?>" href="<?=base_url('frontend/shop')?>"><?=$this->lang->line('frontend_shop')?></a></li>
-						<li><a class="<?=$activemenu=='contact' ? 'active' : ''?>" href="<?=base_url('frontend/contact')?>"><?=$this->lang->line('frontend_contact')?></a></li>
-					</ul>
-					
-				</div>
+			<div class="d-flex justify-content-center">
+				<p><?=$generalsetting->copyright_by?></p>
 			</div>
 		</div>
 	</section>
