@@ -1,18 +1,18 @@
 <?php
 
-$lang['menu_menuname']      = "Menu Name";
-$lang['menu_menulink']      = "Menu Link";
-$lang['menu_menuicon']      = "Menu Icon";
-$lang['menu_priority']      = "Priority";
-$lang['menu_parentmenuID']  = "Parent MenuID";
-$lang['menu_parentmenu']    = "Parent Menu";
+$lang['menu_menuname']      = "Nom Menu";
+$lang['menu_menulink']      = "Lien Menu";
+$lang['menu_menuicon']      = "Icon Menu";
+$lang['menu_priority']      = "Priorité";
+$lang['menu_parentmenuID']  = "MenuID Parent";
+$lang['menu_parentmenu']    = "Menu Parent";
 $lang['menu_status']        = "Status";
-$lang['menu_add_menu']      = "Add Menu";
-$lang['menu_update_menu']   = "Update Menu";
+$lang['menu_add_menu']      = "Ajouter Menu";
+$lang['menu_update_menu']   = "Mise à jour Menu";
 $lang['menu_action']        = "Action";
 $lang['menu_slno']          = "#";
-$lang['menu_edit']          = "Edit";
-$lang['menu_delete']        = "Delete";
-$lang['menu_please_select'] = "Please Select";
+$lang['menu_edit']          = "Modifier";
+$lang['menu_delete']        = "Supprimer";
+$lang['menu_please_select'] = "Selectionner svp";
 $lang['menu_active']        = "Active";
-$lang['menu_disable']       = "Disable";
+$lang['menu_disable']       = "Désactiver";

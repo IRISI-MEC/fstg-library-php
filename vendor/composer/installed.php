@@ -1,24 +1,24 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-master',
-    'version' => 'dev-master',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => '0a25f902771c49e6addcbee27c23a696fe6c5001',
+    'reference' => '0e9a8847de6926985bc74622e1371c42ddb3a9b1',
     'name' => '__root__',
   ),
   'versions' => 
   array (
     '__root__' => 
     array (
-      'pretty_version' => 'dev-master',
-      'version' => 'dev-master',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => '0a25f902771c49e6addcbee27c23a696fe6c5001',
+      'reference' => '0e9a8847de6926985bc74622e1371c42ddb3a9b1',
     ),
     'picqer/php-barcode-generator' => 
     array (
@@ -31,12 +31,12 @@
     ),
     'stripe/stripe-php' => 
     array (
-      'pretty_version' => 'v7.71.0',
-      'version' => '7.71.0.0',
+      'pretty_version' => 'v7.112.0',
+      'version' => '7.112.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '5ebe39d814411594b1ff9d79f0598a0de7faa30b',
+      'reference' => 'f5213ccb88795663f73841bc65f467a0e1e61180',
     ),
   ),
 );

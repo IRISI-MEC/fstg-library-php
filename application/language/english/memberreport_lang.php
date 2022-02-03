@@ -1,26 +1,25 @@
 <?php
 $lang['memberreport_slno']   = "#";
-$lang['memberreport_add']    = "Add";
-$lang['memberreport_edit']   = "Edit";
-$lang['memberreport_view']   = "View";
-$lang['memberreport_delete'] = "Delete";
+$lang['memberreport_add']    = "Ajouter";
+$lang['memberreport_edit']   = "Modifier";
+$lang['memberreport_view']   = "Voir";
+$lang['memberreport_delete'] = "Supprimer";
 $lang['memberreport_action'] = "Action";
 
-$lang['memberreport_please_select'] = "Please Select";
-$lang['memberreport_report_for']    = "Report For";
+$lang['memberreport_please_select'] = "Sélectionner svp";
+$lang['memberreport_report_for']    = "Signaler pour";
 $lang['memberreport_role']          = "Role";
 $lang['memberreport_member']        = "Member";
-$lang['memberreport_blood_group']   = "Blood Group";
+$lang['memberreport_blood_group']   = "Groupe sanguin";
 $lang['memberreport_status']        = "Status";
 $lang['memberreport_active']        = "Active";
-$lang['memberreport_block']         = "Block";
+$lang['memberreport_block']         = "Bloc";
 
 $lang['memberreport_photo']        = "Photo";
-$lang['memberreport_name']         = "Name";
+$lang['memberreport_name']         = "Nom";
 $lang['memberreport_role']         = "Role";
-$lang['memberreport_blood_group']  = "Blood Group";
-$lang['memberreport_phone']        = "Phone";
+$lang['memberreport_phone']        = "Téléphone";
 $lang['memberreport_email']        = "Email";
-$lang['memberreport_get_member']   = "Get Member";
-$lang['memberreport_print_member'] = "Print Member";
-$lang['memberreport_pdf_member']   = "PDF Member";
+$lang['memberreport_get_member']   = "trouver un membre";
+$lang['memberreport_print_member'] = "Imprimer Membre";
+$lang['memberreport_pdf_member']   = "Member PDF";
