@@ -26,7 +26,7 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <?php $language = $this->session->userdata("language"); ?>
                     <img class="languageimage" src="<?=base_url("uploads/language/$language.png")?>" alt="">
-                    <span class="label label-danger">4</span>
+                    <span class="label label-danger">2</span>
                   </a>
                   <ul class="dropdown-menu">
                     <li class="header">Please select your language</li>
@@ -44,7 +44,7 @@
                           <a href="<?=base_url('dashboard/langswitch/english')?>">
                             <h3>
                                 <img class="languageimage" src="<?=base_url('uploads/language/english.png')?>" alt="">
-                                English <?=$language=='english' ? "<i class='fa fa-check'></i>" : ""?>
+                                Francais <?=$language=='english' ? "<i class='fa fa-check'></i>" : ""?>
                             </h3>
                           </a>
                         </li>

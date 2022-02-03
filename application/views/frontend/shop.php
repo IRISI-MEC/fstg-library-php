@@ -3,13 +3,13 @@
 			<div class="row">
 				<div class="col-sm-3">
 					<div class="main-slider-menu">
-						<span class="sidebar-title"><i class="fa fa-list"></i> All Categories</span>
+						<span class="sidebar-title"><i class="fa fa-list"></i> Tous les catégories</span>
 						<div class="slider-menu">
 							<ul>
 								<?php foreach($storebookcategorys as $storebookcategory) { ?>
 									<li><a href="<?=base_url('frontend/shop?category='.$storebookcategory->storebookcategoryID)?>"><?=$storebookcategory->name?></a></li>
 								<?php } ?>
-								<li><a href="<?=base_url('/')?>"> + More Category</a></li>
+								<li><a href="<?=base_url('/')?>"> + Autres catégories</a></li>
 							</ul>
 						</div>
 					</div>

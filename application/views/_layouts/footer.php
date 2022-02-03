@@ -12,9 +12,9 @@
 						<div class="newsletter-box">
 							<form action="<?=base_url('frontend/subscribe')?>" method="POST">
 								<div class="input-group input-group-search-form">
-									<input type="text" name="email" placeholder="Subscribe Now...." class="form-control form-control-lg input-group-search">
+									<input type="text" name="email" placeholder="S'abonner maintenant...." class="form-control form-control-lg input-group-search">
 									<div class="input-group-append search-btn">
-										<input type="submit" class="input-group-text" value="Subscribe">
+										<input type="submit" class="input-group-text" value="S'abonner">
 									</div>
 								</div>
 							</form>
