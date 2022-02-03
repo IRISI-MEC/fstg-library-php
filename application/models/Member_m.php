@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Membre_m extends MY_Model
+class Member_m extends MY_Model
 {
 
     protected $_table_name  = 'member';

@@ -1,6 +1,6 @@
 <?php
 /**
- * Squiz_Sniffs_Objects_ObjectMembreCommaSniff.
+ * Squiz_Sniffs_Objects_ObjectMemberCommaSniff.
  *
  * PHP version 5
  *
@@ -13,7 +13,7 @@
  */
 
 /**
- * Squiz_Sniffs_Objects_ObjectMembreCommaSniff.
+ * Squiz_Sniffs_Objects_ObjectMemberCommaSniff.
  *
  * Ensures the last member of an object is not followed by a comma.
  *
@@ -25,7 +25,7 @@
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
-class Squiz_Sniffs_Objects_ObjectMembreCommaSniff implements PHP_CodeSniffer_Sniff
+class Squiz_Sniffs_Objects_ObjectMemberCommaSniff implements PHP_CodeSniffer_Sniff
 {
 
     /**

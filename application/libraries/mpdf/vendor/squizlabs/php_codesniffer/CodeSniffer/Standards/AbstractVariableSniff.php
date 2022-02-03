@@ -23,7 +23,7 @@ if (class_exists('PHP_CodeSniffer_Standards_AbstractScopeSniff', true) === false
  *
  * This class can distinguish between normal T_VARIABLE tokens, and those tokens
  * that represent class members. If a class member is encountered, then the
- * processMembreVar method is called so the extending class can process it. If
+ * processMemberVar method is called so the extending class can process it. If
  * the token is found to be a normal T_VARIABLE token, then processVariable is
  * called.
  *
@@ -156,7 +156,7 @@ abstract class PHP_CodeSniffer_Standards_AbstractVariableSniff extends PHP_CodeS
         } else {
             // What if we assign a member variable to another?
             // ie. private $_count = $this->_otherCount + 1;.
-            $this->processMembreVar($phpcsFile, $stackPtr);
+            $this->processMemberVar($phpcsFile, $stackPtr);
         }
 
     }//end processTokenWithinScope()
@@ -201,7 +201,7 @@ abstract class PHP_CodeSniffer_Standards_AbstractVariableSniff extends PHP_CodeS
      *
      * @return void
      */
-    abstract protected function processMembreVar(
+    abstract protected function processMemberVar(
         PHP_CodeSniffer_File $phpcsFile,
         $stackPtr
     );

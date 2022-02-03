@@ -1188,7 +1188,7 @@
       if (b[prop] === undefined) {
         delete a[prop];
 
-        // Avoid "Membre not found" error in IE8 caused by setting window.constructor
+        // Avoid "Member not found" error in IE8 caused by setting window.constructor
       } else if (prop !== "constructor" || a !== window) {
         a[prop] = b[prop];
       }

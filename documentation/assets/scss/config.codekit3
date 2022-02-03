@@ -1446,7 +1446,7 @@
 			},
 		"sort-imports": {
 			"active": 0,
-			"optionString": "{'ignoreCase': false, 'ignoreMembreSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
+			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
 			},
 		"sort-keys": {
 			"active": 0,

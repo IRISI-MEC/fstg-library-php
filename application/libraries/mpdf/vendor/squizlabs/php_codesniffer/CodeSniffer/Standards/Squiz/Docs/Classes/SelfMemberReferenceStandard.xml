@@ -1,4 +1,4 @@
-<documentation title="Self Membre Reference">
+<documentation title="Self Member Reference">
     <standard>
     <![CDATA[
     The self keyword should be used instead of the current class name, should be lowercase, and should not have spaces before or after it.

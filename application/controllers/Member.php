@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Membre extends Admin_Controller
+class Member extends Admin_Controller
 {
 
     public function __construct()

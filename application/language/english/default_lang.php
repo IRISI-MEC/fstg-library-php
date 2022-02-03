@@ -4,11 +4,11 @@ $lang['edit']         = "Modifier";
 $lang['update']       = "Mettre à jour";
 $lang['view']         = "Voir";
 $lang['delete']       = "Supprimer";
-$lang['member']       = "Membre";
+$lang['member']       = "Member";
 $lang['new']          = "Nouveau";
 $lang['active']       = "Actif";
 $lang['disable']      = "Désactiver";
-$lang['member_since'] = "Membre depuis";
+$lang['member_since'] = "Member depuis";
 $lang['filebrowse']   = "Explorateur fichier";
 
 $lang['dashboard']         = "Tableau de bord";

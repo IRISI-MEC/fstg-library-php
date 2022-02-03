@@ -21,7 +21,7 @@
                         <div class="box-body">
                             <form method="POST" action="<?=base_url('bookissue/index')?>">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="<?=set_value('memberID', $memberID)?>" name="memberID" placeholder="Filter By Membre ID">
+                                    <input type="text" class="form-control" value="<?=set_value('memberID', $memberID)?>" name="memberID" placeholder="Filter By Member ID">
                                     <div class="input-group-btn">
                                         <button type="submit" class="btn btn-default"><i class="fa fa-search-plus" aria-hidden="true"></i> <?=$this->lang->line('bookissue_search')?></button>
                                     </div>

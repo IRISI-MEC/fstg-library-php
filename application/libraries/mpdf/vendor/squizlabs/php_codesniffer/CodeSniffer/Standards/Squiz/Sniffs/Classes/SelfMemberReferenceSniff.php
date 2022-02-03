@@ -37,12 +37,12 @@ if (class_exists('PHP_CodeSniffer_Standards_AbstractScopeSniff', true) === false
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
-class Squiz_Sniffs_Classes_SelfMembreReferenceSniff extends PHP_CodeSniffer_Standards_AbstractScopeSniff
+class Squiz_Sniffs_Classes_SelfMemberReferenceSniff extends PHP_CodeSniffer_Standards_AbstractScopeSniff
 {
 
 
     /**
-     * Constructs a Squiz_Sniffs_Classes_SelfMembreReferenceSniff.
+     * Constructs a Squiz_Sniffs_Classes_SelfMemberReferenceSniff.
      */
     public function __construct()
     {

@@ -3028,7 +3028,7 @@ class PHP_CodeSniffer_File
      *                                   T_VARIABLE token, or if the position is not
      *                                   a class member variable.
      */
-    public function getMembreProperties($stackPtr)
+    public function getMemberProperties($stackPtr)
     {
         if ($this->_tokens[$stackPtr]['code'] !== T_VARIABLE) {
             throw new PHP_CodeSniffer_Exception('$stackPtr must be of type T_VARIABLE');
@@ -3052,7 +3052,7 @@ class PHP_CodeSniffer_File
                     || empty($this->_tokens[$stackPtr]['nested_parenthesis']) === true
                 ) {
                     $error = 'Possible parse error: interfaces may not include member vars';
-                    $this->addWarning($error, $stackPtr, 'Internal.ParseError.InterfaceHasMembreVar');
+                    $this->addWarning($error, $stackPtr, 'Internal.ParseError.InterfaceHasMemberVar');
                     return array();
                 }
             } else {
@@ -3106,7 +3106,7 @@ class PHP_CodeSniffer_File
                 'is_static'       => $isStatic,
                );
 
-    }//end getMembreProperties()
+    }//end getMemberProperties()
 
 
     /**

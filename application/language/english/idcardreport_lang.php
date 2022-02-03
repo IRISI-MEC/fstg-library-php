@@ -8,7 +8,7 @@ $lang['idcardreport_action'] = "Action";
 
 $lang['idcardreport_please_select']          = "Veuillez séléctionner";
 $lang['idcardreport_role']                   = "Role";
-$lang['idcardreport_member']                 = "Membre";
+$lang['idcardreport_member']                 = "Member";
 $lang['idcardreport_member_ID']              = "ID membre";
 $lang['idcardreport_blood_group']            = "Groupe sanguin";
 $lang['idcardreport_emergency']              = "Urgence";

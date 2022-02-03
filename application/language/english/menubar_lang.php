@@ -1,7 +1,7 @@
 <?php
 
 $lang['menubar_dashboard']         = "Tableau de bord";
-$lang['menubar_member']            = "Membre";
+$lang['menubar_member']            = "Member";
 $lang['menubar_administrator']     = "Administrateur";
 $lang['menubar_menu']              = "Menu";
 $lang['menubar_role']              = "Role";

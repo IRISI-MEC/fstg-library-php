@@ -39,7 +39,7 @@ class PSR2_Sniffs_Classes_PropertyDeclarationSniff extends PHP_CodeSniffer_Stand
      *
      * @return void
      */
-    protected function processMembreVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
+    protected function processMemberVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
 
@@ -77,7 +77,7 @@ class PSR2_Sniffs_Classes_PropertyDeclarationSniff extends PHP_CodeSniffer_Stand
             $phpcsFile->addError($error, $stackPtr, 'ScopeMissing', $data);
         }
 
-    }//end processMembreVar()
+    }//end processMemberVar()
 
 
     /**

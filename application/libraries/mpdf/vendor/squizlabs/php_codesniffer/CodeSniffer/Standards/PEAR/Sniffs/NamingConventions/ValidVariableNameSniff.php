@@ -43,11 +43,11 @@ class PEAR_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_CodeSniff
      *
      * @return void
      */
-    protected function processMembreVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
+    protected function processMemberVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
 
-        $memberProps = $phpcsFile->getMembreProperties($stackPtr);
+        $memberProps = $phpcsFile->getMemberProperties($stackPtr);
         if (empty($memberProps) === true) {
             return;
         }
@@ -81,7 +81,7 @@ class PEAR_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_CodeSniff
             return;
         }
 
-    }//end processMembreVar()
+    }//end processMemberVar()
 
 
     /**
