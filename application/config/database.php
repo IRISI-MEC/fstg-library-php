@@ -6,8 +6,8 @@ $active_record = true;
 
 $db['default']['dsn']          = '';
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'lms_user';
-$db['default']['password'] = 'lms_user';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
 $db['default']['database'] = 'lms_database';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix']     = '';

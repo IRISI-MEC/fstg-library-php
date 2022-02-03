@@ -21,6 +21,11 @@ img {
   max-width: 100%;
 }
 
+.btn-blue {
+  background: #35858B;
+  color: #fff;
+}
+
 .hr-border {
   border-color: #bce4be;
   margin: 0px;
@@ -52,9 +57,9 @@ img {
 
 /*Header Top Section*/
 .header-top {
-  background: #072227;
-  padding: 5px 0px;
   color: #fff;
+  padding: 5px 0px;
+  background: #072227;
 }
 
 .header-top a {
@@ -187,7 +192,7 @@ a.header-phone:hover {
 }
 .sidebar-title {
   color: #fff;
-  background: #35858B;
+  background: #072227;
   border-radius: 16px 16px 0 0;
   width: 100%;
   padding: 10px;
@@ -197,7 +202,7 @@ a.header-phone:hover {
 }
 
 .main-slider-menu {
-  border: 1px solid #35858B;
+  border: 1px solid #072227;
   border-radius: 16px;
 }
 
@@ -421,6 +426,7 @@ a.header-phone:hover {
   border-radius: 5px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 50px;
 }
 .book-category-image {
   overflow: hidden;

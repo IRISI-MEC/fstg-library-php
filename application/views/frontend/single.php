@@ -37,7 +37,7 @@
                                         <div class="input-group mb-3">
                                         <!-- <input name="qty" type="number" min="1" value="1" class="form-control" placeholder="Qty" /> -->
                                             <div class="input-group-append">
-                                                <button class="btn btn-danger"><i class="fa fa-cart-plus"></i> Reserver</button>
+                                                <button class="btn btn-blue"><i class="fa fa-cart-plus"></i> Reserver</button>
                                             </div>
                                         </div>
                                     </form>

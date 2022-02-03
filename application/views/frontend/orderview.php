@@ -104,7 +104,7 @@
 							    <footer class="text-center mt-4">
 							        <p><strong><?=$this->lang->line('frontend_note')?> :</strong> <?=$order->notes?></p>
 							        <div class="btn-group btn-group-sm d-print-none">
-							            <a onclick="printDiv('invoiceprint')" class="btn btn-success text-white">
+							            <a onclick="printDiv('invoiceprint')" class="btn btn-blue text-white">
 							            	<i class="fa fa-print"></i> <?=$this->lang->line('frontend_print')?>
 							            </a>
 							        </div>

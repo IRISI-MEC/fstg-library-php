@@ -30,9 +30,9 @@
                     <div class="well text-center">
                         <strong>Login Panel</strong><br/>
                         <button class="btn btn-primary" id="admin">Admin</button>
-                        <button class="btn btn-danger" id="librarian">Librarian</button>
+                        <button class="btn btn-blue" id="librarian">Librarian</button>
                         <button class="btn btn-warning" id="member">Member</button>
-                        <button class="btn btn-success" id="guest">Guest</button>
+                        <button class="btn btn-blue" id="guest">Guest</button>
                     </div>
                 </div>
             </div>

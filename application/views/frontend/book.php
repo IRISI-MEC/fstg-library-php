@@ -41,7 +41,7 @@
 
                         <div class="col-sm-3">
                             <div class="form-group">
-                                <button class="btn btn-success" style="margin-top: 30px"><?=$this->lang->line('frontend_get_book')?></button>
+                                <button class="btn btn-blue" style="margin-top: 30px"><?=$this->lang->line('frontend_get_book')?></button>
                             </div>
                         </div>
                     </div>

@@ -25,7 +25,7 @@
 	</div>
 </div>
 <hr class="hr-border">
-<?php } if(calculate($bookcategorys)) { ?>
+<!-- <?php } if(calculate($bookcategorys)) { ?>
 <div class="main-book-category-list">
 	<div class="container">
 		<div class="row">
@@ -49,4 +49,4 @@
 		</div>
 	</div>
 </div>
-<?php } ?>
+<?php } ?> -->

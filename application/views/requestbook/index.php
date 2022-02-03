@@ -38,7 +38,7 @@
                                     <td data-title="<?=$this->lang->line('requestbook_author')?>"><?=$requestbook->author?></td>
                                     <td data-title="<?=$this->lang->line('requestbook_book_category')?>"><?=isset($bookcategorys[$requestbook->bookcategoryID]) ? $bookcategorys[$requestbook->bookcategoryID] : ''?></td>
                                     <td data-title="<?=$this->lang->line('requestbook_status')?>">
-                                        <span class="btn btn-danger btn-xs mrg">
+                                        <span class="btn btn-blue btn-xs mrg">
                                         <?php 
                                             if($requestbook->status ==0) {
                                                 echo $this->lang->line('requestbook_requested');

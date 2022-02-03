@@ -39,7 +39,7 @@
                             <input type="text" class="form-control <?=form_error('password') ? 'is-invalid' : ''?>" name="password" value="<?=set_value('password')?>" />
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-success btn-block"><?=$this->lang->line('frontend_register')?></button>
+                            <button type="submit" class="btn btn-blue btn-block"><?=$this->lang->line('frontend_register')?></button>
                         </div>
                     </form>
 

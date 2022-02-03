@@ -78,7 +78,7 @@
     				        </div>
                         <?php } ?>
 						<div class="form-group">
-                			<button class="btn btn-success" type="submit" id="placeOrder"><?=$this->lang->line('frontend_place_to_order')?></button>
+                			<button class="btn btn-blue" type="submit" id="placeOrder"><?=$this->lang->line('frontend_place_to_order')?></button>
 						</div>
 					</form>
 				</div>

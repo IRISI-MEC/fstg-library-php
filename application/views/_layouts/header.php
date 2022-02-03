@@ -90,10 +90,10 @@
 				</div>
 				<div class="col-sm-3">
 					<div class="carts float-right">
-						<button class="btn btn-success btn btn-lg cart-item-badge" type="button" data-toggle="dropdown">
+						<!-- <button class="btn btn-blue btn btn-lg cart-item-badge" type="button" data-toggle="dropdown">
 						    <i class="fa fa-shopping-bag"></i> <b><?=app_amount_format($this->cart->total()); ?></b>
 						    <span class="badge badge-danger cart-item-badge-count"><?=$this->cart->total_items()?></span>
-						</button>
+						</button> -->
 						<div class="dropdown-menu dropdown-menu-right">
 							<div class="mini-cart">
 							    <?php 
@@ -112,7 +112,7 @@
 								            <p>Qty: <?=$cart_content['qty']?> X <span> <?=$cart_content['price']?> </span></p>
 								        </div>
 								        <div class="cart-item-remove">
-								            <a class="btn btn-danger btn-sm" href="<?=base_url('frontend/removecart/'.$cart_content['rowid'])?>"><i class="fa fa-trash"></i></a>
+								            <a class="btn btn-blue btn-sm" href="<?=base_url('frontend/removecart/'.$cart_content['rowid'])?>"><i class="fa fa-trash"></i></a>
 								        </div>
 								    </div>
 								<?php } ?>
@@ -128,8 +128,8 @@
 								    </div>
 
 								    <div class="mini-cart-footer">
-							            <a class="btn btn-success btn-sm float-left" href="<?=base_url('frontend/cart')?>">View cart</a>
-							            <a class="btn btn-success btn-sm float-right" href="<?=base_url('frontend/checkout')?>">Checkout</a>
+							            <a class="btn btn-blue btn-sm float-left" href="<?=base_url('frontend/cart')?>">View cart</a>
+							            <a class="btn btn-blue btn-sm float-right" href="<?=base_url('frontend/checkout')?>">Checkout</a>
 								    </div>
 								<?php } else { ?>
 									<h6 class="p-3"><?=$this->lang->line('frontend_cart_empty')?></h6>
@@ -147,8 +147,8 @@
 			<ul>
 				<li><a class="<?=$activemenu=='index' ? 'active' : ''?>" href="<?=base_url('frontend/index')?>"><i class="fa fa-home"></i><?=$this->lang->line('frontend_home')?></a></li>
 				<li><a class="<?=$activemenu=='ebook' ? 'active' : ''?>" href="<?=base_url('frontend/ebook')?>"><?=$this->lang->line('frontend_ebook')?></a></li>
-				<li><a class="<?=$activemenu=='book' ? 'active' : ''?>" href="<?=base_url('frontend/book')?>"><?=$this->lang->line('frontend_book')?></a></li>
-				<li><a class="<?=$activemenu=='shop' ? 'active' : ''?>" href="<?=base_url('frontend/shop')?>"><?=$this->lang->line('frontend_shop')?></a></li>
+				<!-- <li><a class="<?=$activemenu=='book' ? 'active' : ''?>" href="<?=base_url('frontend/book')?>"><?=$this->lang->line('frontend_book')?></a></li> -->
+				<li><a class="<?=$activemenu=='shop' ? 'active' : ''?>" href="<?=base_url('frontend/shop')?>"><?=$this->lang->line('frontend_book')?></a></li>
 				<li><a class="<?=$activemenu=='contact' ? 'active' : ''?>" href="<?=base_url('frontend/contact')?>"><?=$this->lang->line('frontend_contact')?></a></li>
 			</ul>
 		</div>

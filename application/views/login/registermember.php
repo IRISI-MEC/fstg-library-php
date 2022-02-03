@@ -53,7 +53,7 @@
                                 <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
                                     <span class="fa fa-remove"></span><?=$this->lang->line('login_clear')?>
                                 </button>
-                                <div class="btn btn-success image-preview-input">
+                                <div class="btn btn-blue image-preview-input">
                                     <span class="fa fa-repeat"></span>
                                     <span class="image-preview-input-title"><?=$this->lang->line('login_filebrowse')?></span>
                                     <input type="file" accept="image/png, image/jpeg, image/gif" name="photo"/>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
-                            <a type="submit" href="<?=base_url('login/index')?>" class="btn btn-danger btn-block"><?=$this->lang->line('login_back_to_login')?></a>
+                            <a type="submit" href="<?=base_url('login/index')?>" class="btn btn-blue btn-block"><?=$this->lang->line('login_back_to_login')?></a>
                         </div>
                         <div class="col-xs-6">
                             <button type="submit" class="btn btn-primary btn-block"><?=$this->lang->line('login_submit')?></button>

@@ -62,11 +62,11 @@
                 <div class="row">
                     <p class="text-center">-- OR --</p>
                     <div class="<?=$generalsetting->registration ? 'col-xs-6' : 'col-xs-12 text-center'?>">
-                        <a class="btn btn-danger btn-sm <?=$generalsetting->registration ? 'pull-left' : ''?>" href="<?=base_url('login/resetpassword')?>"><?=$this->lang->line('login_reset_your_password')?></a><br>
+                        <a class="btn btn-blue btn-sm <?=$generalsetting->registration ? 'pull-left' : ''?>" href="<?=base_url('login/resetpassword')?>"><?=$this->lang->line('login_reset_your_password')?></a><br>
                     </div>
                     <?php if($generalsetting->registration) { ?>
                         <div class="col-xs-6">
-                            <a class="btn btn-success btn-sm pull-right" href="<?=base_url('login/registermember')?>" class="text-center"><?=$this->lang->line('login_register_new_member')?></a>
+                            <a class="btn btn-blue btn-sm pull-right" href="<?=base_url('login/registermember')?>" class="text-center"><?=$this->lang->line('login_register_new_member')?></a>
                         </div>
                     <?php } ?>
                 </div>
@@ -79,9 +79,9 @@
                 <div class="well text-center">
                     <strong>Login Panel</strong><br/>
                     <button class="btn btn-primary" id="admin">Admin</button>
-                    <button class="btn btn-danger" id="librarian">Librarian</button>
+                    <button class="btn btn-blue" id="librarian">Librarian</button>
                     <button class="btn btn-warning" id="member">Member</button>
-                    <button class="btn btn-success" id="guest">Guest</button>
+                    <button class="btn btn-blue" id="guest">Guest</button>
                 </div>
             </div>
         </div>

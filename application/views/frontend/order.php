@@ -30,7 +30,7 @@
 								      		<td><?=orderStatus($order->status)?></td>
 								      		<td><?=$order->total?></td>
 								      		<td>
-												<a href="<?=base_url('myaccount/orderview/'.$order->orderID)?>" class="btn btn-success btn-sm">
+												<a href="<?=base_url('myaccount/orderview/'.$order->orderID)?>" class="btn btn-blue btn-sm">
 													<i class="fa fa-check-square-o"></i>
 												</a>
 								      		</td>

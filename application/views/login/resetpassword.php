@@ -41,7 +41,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
-                            <a type="submit" href="<?=base_url('login/index')?>" class="btn btn-danger btn-block"><?=$this->lang->line('login_back_to_login')?></a>
+                            <a type="submit" href="<?=base_url('login/index')?>" class="btn btn-blue btn-block"><?=$this->lang->line('login_back_to_login')?></a>
                         </div>
                         <div class="col-xs-6">
                             <button type="submit" class="btn btn-primary btn-block"><?=$this->lang->line('login_send_email')?></button>

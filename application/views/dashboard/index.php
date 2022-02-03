@@ -53,7 +53,7 @@
                             <input class="form-control" type="text" id="chatmessage" name="chatmessage" placeholder="<?=$this->lang->line('dashboard_type_message')?>">
                             <div class="input-group-btn">
                                 <button type="button" class="btn btn-mytheme" id="chatmessagesend"><i class="fa fa-send"></i></button>
-                                <button type="button" class="btn btn-danger" id="chatmessagerefresh"><i class="fa fa-refresh fa-spin"></i></button>
+                                <button type="button" class="btn btn-blue" id="chatmessagerefresh"><i class="fa fa-refresh fa-spin"></i></button>
                             </div>
                         </div>
                     </div>

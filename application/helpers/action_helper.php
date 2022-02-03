@@ -141,7 +141,7 @@ function pluck_multi_array_key($arrays, $val, $fstKey = null, $sndKey = null)
 
 function btn_download($uri, $name)
 {
-    return anchor($uri, "<i class='fa fa-download'></i>", "class='btn btn-success btn-xs' data-placement='top' data-toggle='tooltip' data-original-title='" . $name . "'");
+    return anchor($uri, "<i class='fa fa-download'></i>", "class='btn btn-blue btn-xs' data-placement='top' data-toggle='tooltip' data-original-title='" . $name . "'");
 }
 
 function namesorting($string, $len = 14)
@@ -161,7 +161,7 @@ function namesorting($string, $len = 14)
 function btn_view($uri, $name)
 {
     if (visibleButton($uri)) {
-        return anchor($uri, "<i class='fa fa-check-square-o'></i>", "class='btn btn-success btn-xs' data-placement='auto' data-toggle='tooltip' data-original-title='" . $name . "'");
+        return anchor($uri, "<i class='fa fa-check-square-o'></i>", "class='btn btn-blue btn-xs' data-placement='auto' data-toggle='tooltip' data-original-title='" . $name . "'");
     }
 }
 
@@ -178,7 +178,7 @@ function btn_delete($uri, $name)
         return anchor($uri, "<i class='fa fa-trash-o'></i>",
             array(
                 'onclick'             => "return confirm('you are about to delete a record. This cannot be undone. are you sure?')",
-                'class'               => 'btn btn-danger btn-xs',
+                'class'               => 'btn btn-blue btn-xs',
                 'data-placement'      => 'top',
                 'data-toggle'         => 'tooltip',
                 'data-original-title' => $name,
@@ -225,7 +225,7 @@ function permissionChecker($data)
 
 function btn_view_show($uri, $name)
 {
-    return anchor($uri, "<i class='fa fa-check-square-o'></i>", "class='btn btn-success btn-xs' data-placement='auto' data-toggle='tooltip' data-original-title='" . $name . "'");
+    return anchor($uri, "<i class='fa fa-check-square-o'></i>", "class='btn btn-blue btn-xs' data-placement='auto' data-toggle='tooltip' data-original-title='" . $name . "'");
 }
 
 function btn_payment_show($uri, $name)
@@ -243,7 +243,7 @@ function btn_delete_show($uri, $name)
     return anchor($uri, "<i class='fa fa-trash-o'></i>",
         array(
             'onclick'             => "return confirm('you are about to delete a record. This cannot be undone. are you sure?')",
-            'class'               => 'btn btn-danger btn-xs',
+            'class'               => 'btn btn-blue btn-xs',
             'data-placement'      => 'top',
             'data-toggle'         => 'tooltip',
             'data-original-title' => $name,
@@ -579,9 +579,9 @@ function status_button($status)
 {
     $CI = &get_instance();
     if ($status == 1) {
-        return '<span class="btn btn-success btn-xs">' . $CI->lang->line('active') . '</span>';
+        return '<span class="btn btn-blue btn-xs">' . $CI->lang->line('active') . '</span>';
     } elseif ($status == 2) {
-        return '<span class="btn btn-danger btn-xs">' . $CI->lang->line('disable') . '</span>';
+        return '<span class="btn btn-blue btn-xs">' . $CI->lang->line('disable') . '</span>';
     } else {
         return '<span class="btn btn-primary btn-xs">' . $CI->lang->line('new') . '</span>';
     }

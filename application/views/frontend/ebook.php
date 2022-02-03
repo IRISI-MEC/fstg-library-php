@@ -12,7 +12,7 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group">
-                                <button class="btn btn-success" style="margin-top: 30px;"><?=$this->lang->line('frontend_get_ebook')?></button>
+                                <button class="btn btn-blue" style="margin-top: 30px;"><?=$this->lang->line('frontend_get_ebook')?></button>
                             </div>
                         </div>
                     </form>

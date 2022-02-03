@@ -50,7 +50,7 @@
                                     <p>You login user name is <b><?=$this->session->userdata('adminusername')?></b> and login password is <b><?=$this->session->userdata('adminpassword');?></b></p>
                                     <p>You can login now click this below button</p>
                                     <div class="col-md-12 text-center"> 
-                                        <a href="<?=base_url('login')?>" class="btn btn-danger btn-lg">Login Now</a>
+                                        <a href="<?=base_url('login')?>" class="btn btn-blue btn-lg">Login Now</a>
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>

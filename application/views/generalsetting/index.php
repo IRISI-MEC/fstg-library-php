@@ -30,7 +30,7 @@
 							        <div class="input-group image-preview">
 							            <input type="text" class="form-control fileuploadname" value="<?=set_value('logo', $generalsetting->logo)?>" disabled="disabled" />
 							            <span class="input-group-btn">
-							                <div class="btn btn-success image-preview-input">
+							                <div class="btn btn-blue image-preview-input">
 							                    <span class="fa fa-repeat"></span>
 							                    <span class="image-preview-input-title"><?=$this->lang->line('generalsetting_filebrowse')?></span>
 							                    <input type="file" name="logo" id="fileupload"/>
