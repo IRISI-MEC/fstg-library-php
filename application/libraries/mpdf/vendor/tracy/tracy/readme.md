@@ -1,5 +1,4 @@
-[Tracy](https://tracy.nette.org) - PHP debugger
-==============================================
+# [Tracy](https://tracy.nette.org) - PHP debugger
 
 [![Downloads this Month](https://img.shields.io/packagist/dm/tracy/tracy.svg)](https://packagist.org/packages/tracy/tracy)
 [![Build Status](https://travis-ci.org/nette/tracy.svg?branch=master)](https://travis-ci.org/nette/tracy)
@@ -8,9 +7,7 @@
 [![License](https://img.shields.io/badge/license-New%20BSD-blue.svg)](https://github.com/nette/tracy/blob/master/license.md)
 [![Join the chat at https://gitter.im/nette/tracy](https://badges.gitter.im/nette/tracy.svg)](https://gitter.im/nette/tracy)
 
-
-Introduction
-------------
+## Introduction
 
 Tracy library is a useful helper for everyday PHP programmers. It helps you to:
 
@@ -20,16 +17,13 @@ Tracy library is a useful helper for everyday PHP programmers. It helps you to:
 - measure execution time of scripts/queries
 - see memory consumption
 
-
 PHP is a perfect language for making hardly detectable errors because it gives a great flexibility to programmers. Tracy\Debugger is more valuable because of that. It is a ultimate tool among the diagnostic ones.
 If you are meeting Tracy the first time, believe me, your life starts to be divided one before the Tracy and the one with her.
 Welcome to the good part!
 
 Documentation can be found on the [website](https://tracy.nette.org).
 
-
-Installation
-------------
+## Installation
 
 The recommended way to is via Composer:
 
@@ -41,9 +35,7 @@ Alternatively, you can download the whole package or [tracy.phar](https://github
 
 It requires PHP version 5.4.4 and supports PHP up to 7.2.
 
-
-Usage
------
+## Usage
 
 Activating Tracy is easy. Simply add these two lines of code, preferably just after library loading (like `require 'vendor/autoload.php'`) and before any output is sent to browser:
 
@@ -58,9 +50,7 @@ The first thing you will notice on the website is a Debugger Bar.
 (If you do not see anything, it means that Tracy is running in production mode. For security reasons, Tracy is visible only on localhost.
 You may force Tracy to run in development mode by passing the `Debugger::DEVELOPMENT` as the first parameter of `enable()` method.)
 
-
-Debugger Bar
-------------
+## Debugger Bar
 
 The Debugger Bar is a floating panel. It is displayed in the bottom right corner of a page. You can move it using the mouse. It will remember its position after the page reloading.
 
@@ -71,9 +61,7 @@ You can add other useful panels into the Debugger Bar. You can find interesing o
 Implementation of custom bar is easy, just implement interface `Tracy\IBarPanel` with two methods `getTab` and `getContent`, both returning content to be displayed.
 Afterward, registering via `Debugger::getBar()->addPanel(new CustomPanel());` is everything you will need to do.
 
-
-Visualization of errors and exceptions
---------------------------------------
+## Visualization of errors and exceptions
 
 Surely, you know how PHP reports errors: there is something like this in the page source code:
 
@@ -84,7 +72,7 @@ Surely, you know how PHP reports errors: there is something like this in the pag
 or uncaught exception:
 
 ```pre
-<b>Fatal error</b>:  Uncaught Nette\MemberAccessException: Call to undefined method Nette\Application\UI\Form::addTest()? in /sandbox/vendor/nette/utils/src/Utils/ObjectMixin.php:100
+<b>Fatal error</b>:  Uncaught Nette\MembreAccessException: Call to undefined method Nette\Application\UI\Form::addTest()? in /sandbox/vendor/nette/utils/src/Utils/ObjectMixin.php:100
 Stack trace:
 #0 /sandbox/vendor/nette/utils/src/Utils/Object.php(75): Nette\Utils\ObjectMixin::call(Object(Nette\Application\UI\Form), 'addTest', Array)
 #1 /sandbox/app/forms/SignFormFactory.php(32): Nette\Object-&gt;__call('addTest', Array)
@@ -118,9 +106,7 @@ Debugger::$strictMode = true;
 
 If your site uses Content Security Policy, you'll need to add `'unsafe-inline'` to `style-src`, and `'self'` or `'nonce-<value>` to `script-src` for Tracy to work properly. Avoid adding `'unsafe-inline'` in production mode, if you can. Some 3rd plugins may require additional directives.
 
-
-Faster loading
---------------
+## Faster loading
 
 The basic integration is straightforward, however if you have slow blocking scripts in web page, they can slow the Tracy loading.
 The solution is to place `<?php Tracy\Debugger::renderLoader() ?>` into your template before
@@ -137,9 +123,7 @@ any scripts:
 </head>
 ```
 
-
-AJAX and redirected requests
-----------------------------
+## AJAX and redirected requests
 
 Tracy is able to show Debug bar and Bluescreens for AJAX and redirected requests. You just have to start session before Tracy:
 
@@ -160,9 +144,7 @@ session_start();
 Debugger::dispatch();
 ```
 
-
-Production mode and error logging
----------------------------------
+## Production mode and error logging
 
 As you can see, Tracy is quite eloquent. It is appreciated in a development environment, but on a production server it would cause a disaster. Any debugging information cannot be listed there. Therefore Tracy has an environment autodetection and logging functionality. Instead of showing herself, Tracy stores information into a log file and shows the visitor a user-comprehensible server error message:
 
@@ -210,9 +192,7 @@ Debugger::$email = 'admin@example.com';
 
 To protect your e-mail box from flood, Tracy sends **only one message** and creates a file `email-sent`. When a developer receives the e-mail notification, he checks the log, corrects his application and deletes the `email-sent` monitoring file. This activates the e-mail sending again.
 
-
-Variable dumping
------------------
+## Variable dumping
 
 Every debugging developer is a good friend with the function `var_dump`, which lists all contents of any variable in detail. Unfortunately, its output is without HTML formatting and outputs the dump into a single line of HTML code, not to mention context escaping. It is necessary to replace the `var_dump` by a handier function. That is just what `dump()` is.
 
@@ -252,9 +232,7 @@ bdump([1, 3, 5, 7, 9], 'odd numbers up to ten');
 
 ![bar dump](https://nette.github.io/tracy/images/tracy-bardump.png)
 
-
-Timing
-------
+## Timing
 
 Another useful tool is the debugger stopwatch with a precision of microseconds:
 
@@ -289,19 +267,19 @@ Debugger::timer(); // runs the timer
 echo Debugger::timer(); // elapsed time in seconds
 ```
 
-
-FireLogger
-----------
+## FireLogger
 
 You cannot always send debugging information to the browser window. This applies to AJAX requests, or generating XML files to output. In such cases, you can send the messages by a separate channel into FireLogger. Error, Notice and Warning levels are sent to FireLogger window automatically. It is also possible to log suppressed exceptions in running application when attention to them is important.
 
 How to do it?
 
 Firefox:
+
 - install extension [Firebug](http://getfirebug.com/) and [FireLogger](https://addons.mozilla.org/cs/firefox/addon/firelogger/)
 - turn on Firebug (using F12 key), enable tabs Net and Logger (stay on Logger)
 
 Chrome:
+
 - install extension [FireLogger for Chrome](https://chrome.google.com/webstore/detail/firelogger-for-chrome/hmagilfopmdjkeomnjpchokglfdfjfeh)
 - turn on Chrome DevTools (using Ctrl-Shift-I key) and open Console
 
@@ -323,9 +301,10 @@ The result looks like this:
 
 ![FireLogger](https://nette.github.io/tracy/images/tracy-firelogger.png)
 
-Ports
------------------------------
+## Ports
+
 This is list of unofficial ports to another frameworks and CMS than Nette:
+
 - [Drupal 7](http://drupal.org/project/traced)
 - Laravel framework: [recca0120/laravel-tracy](https://github.com/recca0120/laravel-tracy), [whipsterCZ/laravel-tracy](https://github.com/whipsterCZ/laravel-tracy)
 - [OpenCart](https://github.com/BurdaPraha/oc_tracy)

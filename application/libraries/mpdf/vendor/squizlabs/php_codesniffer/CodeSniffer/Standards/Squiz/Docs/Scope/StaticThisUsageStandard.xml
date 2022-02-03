@@ -11,7 +11,7 @@ class Foo
 {
     <em>static</em> function bar()
     {
-        return <em>self</em>::$staticMember;
+        return <em>self</em>::$staticMembre;
     }
 }
 ]]>
@@ -22,7 +22,7 @@ class Foo
 {
     <em>static</em> function bar()
     {
-    return <em>$this</em>->$staticMember;
+    return <em>$this</em>->$staticMembre;
     }
 }
 ]]>

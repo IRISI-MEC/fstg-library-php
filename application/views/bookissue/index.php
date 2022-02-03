@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="bookissuesearchbox">
                     <?php if(permissionChecker('bookissue_add')) { ?>
-                    <div class="col-sm-2 col-sm-offset-3">
+                    <div class="col-sm-3 col-sm-offset-2">
                         <div class="box-header">
                             <a href="<?=base_url('bookissue/add')?>" class="btn btn-inline btn-mytheme btn-md"><i class="fa fa-plus"></i>  <?=$this->lang->line('bookissue_add_book_issue')?></a>
                         </div>
@@ -21,7 +21,7 @@
                         <div class="box-body">
                             <form method="POST" action="<?=base_url('bookissue/index')?>">
                                 <div class="input-group">
-                                    <input type="text" class="form-control" value="<?=set_value('memberID', $memberID)?>" name="memberID" placeholder="Filter By Member ID">
+                                    <input type="text" class="form-control" value="<?=set_value('memberID', $memberID)?>" name="memberID" placeholder="Filter By Membre ID">
                                     <div class="input-group-btn">
                                         <button type="submit" class="btn btn-default"><i class="fa fa-search-plus" aria-hidden="true"></i> <?=$this->lang->line('bookissue_search')?></button>
                                     </div>

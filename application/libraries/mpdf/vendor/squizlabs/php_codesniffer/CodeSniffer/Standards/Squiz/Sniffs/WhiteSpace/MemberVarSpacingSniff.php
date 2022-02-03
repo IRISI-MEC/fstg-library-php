@@ -29,7 +29,7 @@ if (class_exists('PHP_CodeSniffer_Standards_AbstractVariableSniff', true) === fa
  * @version   Release: @package_version@
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
-class Squiz_Sniffs_WhiteSpace_MemberVarSpacingSniff extends PHP_CodeSniffer_Standards_AbstractVariableSniff
+class Squiz_Sniffs_WhiteSpace_MembreVarSpacingSniff extends PHP_CodeSniffer_Standards_AbstractVariableSniff
 {
 
 
@@ -41,7 +41,7 @@ class Squiz_Sniffs_WhiteSpace_MemberVarSpacingSniff extends PHP_CodeSniffer_Stan
      *
      * @return void
      */
-    protected function processMemberVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
+    protected function processMembreVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
 
@@ -127,7 +127,7 @@ class Squiz_Sniffs_WhiteSpace_MemberVarSpacingSniff extends PHP_CodeSniffer_Stan
             $phpcsFile->fixer->endChangeset();
         }//end if
 
-    }//end processMemberVar()
+    }//end processMembreVar()
 
 
     /**

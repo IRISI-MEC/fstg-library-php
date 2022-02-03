@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Memberreport extends Admin_Controller
+class Membrereport extends Admin_Controller
 {
 
     public function __construct()

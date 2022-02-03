@@ -43,7 +43,7 @@ class Squiz_Sniffs_Commenting_VariableCommentSniff extends PHP_CodeSniffer_Stand
      *
      * @return void
      */
-    public function processMemberVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
+    public function processMembreVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
         $ignore = array(
@@ -130,7 +130,7 @@ class Squiz_Sniffs_Commenting_VariableCommentSniff extends PHP_CodeSniffer_Stand
             }
         }
 
-    }//end processMemberVar()
+    }//end processMembreVar()
 
 
     /**

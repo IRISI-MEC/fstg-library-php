@@ -383,11 +383,11 @@ INSERT INTO `permissionlog` (`permissionlogID`, `name`, `description`, `active`)
 (4, 'bookissue_edit', 'Book Issue Edit', 'yes'),
 (5, 'bookissue_view', 'Book Issue View', 'yes'),
 (6, 'bookissue_delete', 'Book Issue Delete', 'yes'),
-(7, 'member', 'Member', 'yes'),
-(8, 'member_add', 'Member Add', 'yes'),
-(9, 'member_edit', 'Member Edit', 'yes'),
-(10, 'member_view', 'Member View', 'yes'),
-(11, 'member_delete', 'Member Delete', 'yes'),
+(7, 'member', 'Membre', 'yes'),
+(8, 'member_add', 'Membre Add', 'yes'),
+(9, 'member_edit', 'Membre Edit', 'yes'),
+(10, 'member_view', 'Membre View', 'yes'),
+(11, 'member_delete', 'Membre Delete', 'yes'),
 (12, 'ebook', 'Ebook', 'yes'),
 (13, 'ebook_add', 'Ebook Add', 'yes'),
 (14, 'ebook_edit', 'Ebook Edit', 'yes'),
@@ -425,7 +425,7 @@ INSERT INTO `permissionlog` (`permissionlogID`, `name`, `description`, `active`)
 (46, 'expense_delete', 'Expense Delete', 'yes'),
 (47, 'bookreport', 'Book Report', 'yes'),
 (48, 'bookissuereport', 'Book Issue Report', 'yes'),
-(49, 'memberreport', 'Member Report', 'yes'),
+(49, 'memberreport', 'Membre Report', 'yes'),
 (50, 'idcardreport', 'ID Card Report', 'yes'),
 (51, 'transactionreport', 'Transaction Report', 'yes'),
 (52, 'menu', 'Menu', 'yes'),
@@ -726,7 +726,7 @@ CREATE TABLE `role` (
 INSERT INTO `role` (`roleID`, `role`, `create_date`, `create_memberID`, `create_roleID`, `modify_date`, `modify_memberID`, `modify_roleID`) VALUES
 (1, 'Admin', '2019-09-25 20:19:22', 1, 1, '2019-09-25 20:19:22', 1, 1),
 (2, 'Librarian', '2019-09-25 20:19:32', 1, 1, '2020-01-29 23:32:27', 1, 1),
-(3, 'Member', '2019-09-25 20:19:39', 1, 1, '2019-11-03 00:03:22', 1, 1),
+(3, 'Membre', '2019-09-25 20:19:39', 1, 1, '2019-11-03 00:03:22', 1, 1),
 (4, 'Customer', '2019-12-10 20:38:31', 1, 1, '2019-12-10 20:38:31', 1, 1);
 
 CREATE TABLE `storebook` (

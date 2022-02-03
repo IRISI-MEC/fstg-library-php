@@ -152,11 +152,11 @@ class Zend_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_CodeSniff
      *
      * @return void
      */
-    protected function processMemberVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
+    protected function processMembreVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
         $tokens      = $phpcsFile->getTokens();
         $varName     = ltrim($tokens[$stackPtr]['content'], '$');
-        $memberProps = $phpcsFile->getMemberProperties($stackPtr);
+        $memberProps = $phpcsFile->getMembreProperties($stackPtr);
         $public      = ($memberProps['scope'] === 'public');
 
         if ($public === true) {
@@ -180,16 +180,16 @@ class Zend_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_CodeSniff
         }
 
         if (PHP_CodeSniffer::isCamelCaps($varName, false, $public, false) === false) {
-            $error = 'Member variable "%s" is not in valid camel caps format';
+            $error = 'Membre variable "%s" is not in valid camel caps format';
             $data  = array($varName);
-            $phpcsFile->addError($error, $stackPtr, 'MemberVarNotCamelCaps', $data);
+            $phpcsFile->addError($error, $stackPtr, 'MembreVarNotCamelCaps', $data);
         } else if (preg_match('|\d|', $varName) === 1) {
-            $warning = 'Member variable "%s" contains numbers but this is discouraged';
+            $warning = 'Membre variable "%s" contains numbers but this is discouraged';
             $data    = array($varName);
-            $phpcsFile->addWarning($warning, $stackPtr, 'MemberVarContainsNumbers', $data);
+            $phpcsFile->addWarning($warning, $stackPtr, 'MembreVarContainsNumbers', $data);
         }
 
-    }//end processMemberVar()
+    }//end processMembreVar()
 
 
     /**

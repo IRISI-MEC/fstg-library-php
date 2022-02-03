@@ -142,12 +142,12 @@ class Squiz_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_CodeSnif
      *
      * @return void
      */
-    protected function processMemberVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
+    protected function processMembreVar(PHP_CodeSniffer_File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
 
         $varName     = ltrim($tokens[$stackPtr]['content'], '$');
-        $memberProps = $phpcsFile->getMemberProperties($stackPtr);
+        $memberProps = $phpcsFile->getMembreProperties($stackPtr);
         if (empty($memberProps) === true) {
             // Couldn't get any info about this variable, which
             // generally means it is invalid or possibly has a parse
@@ -178,11 +178,11 @@ class Squiz_Sniffs_NamingConventions_ValidVariableNameSniff extends PHP_CodeSnif
         }
 
         if (PHP_CodeSniffer::isCamelCaps($varName, false, $public, false) === false) {
-            $error = 'Member variable "%s" is not in valid camel caps format';
-            $phpcsFile->addError($error, $stackPtr, 'MemberNotCamelCaps', $errorData);
+            $error = 'Membre variable "%s" is not in valid camel caps format';
+            $phpcsFile->addError($error, $stackPtr, 'MembreNotCamelCaps', $errorData);
         }
 
-    }//end processMemberVar()
+    }//end processMembreVar()
 
 
     /**

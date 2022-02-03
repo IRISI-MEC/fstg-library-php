@@ -80,7 +80,7 @@
                     <strong>Login Panel</strong><br/>
                     <button class="btn btn-primary" id="admin">Admin</button>
                     <button class="btn btn-blue" id="librarian">Librarian</button>
-                    <button class="btn btn-warning" id="member">Member</button>
+                    <button class="btn btn-warning" id="member">Membre</button>
                     <button class="btn btn-blue" id="guest">Guest</button>
                 </div>
             </div>

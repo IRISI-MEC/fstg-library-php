@@ -172,7 +172,7 @@ class Login extends Admin_Controller
                         redirect(base_url('login/index'));
                     }
                 } else {
-                    $this->session->set_flashdata('error', 'The Member not found.');
+                    $this->session->set_flashdata('error', 'The Membre not found.');
                     redirect(base_url('login/index'));
                 }
             }

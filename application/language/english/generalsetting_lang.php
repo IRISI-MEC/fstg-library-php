@@ -1,21 +1,21 @@
 <?php
 
-$lang['generalsetting_sitename']         = "Site Name";
-$lang['generalsetting_general_setting']  = "General Setting";
-$lang['generalsetting_theme_setting']    = "Theme Setting";
-$lang['generalsetting_update_setting']   = "Update Setting";
-$lang['generalsetting_copyright_by']     = "Copyright By";
+$lang['generalsetting_sitename']         = "Nom du site";
+$lang['generalsetting_general_setting']  = "Réglage général";
+$lang['generalsetting_theme_setting']    = "Réglage du thème";
+$lang['generalsetting_update_setting']   = "Réglage de la mise à jour";
+$lang['generalsetting_copyright_by']     = "Droit d'auteur par";
 $lang['generalsetting_favicon']          = "Favicon";
-$lang['generalsetting_web_address']      = "Web Address";
-$lang['generalsetting_address']          = "Address";
-$lang['generalsetting_email']            = "Email";
-$lang['generalsetting_phone']            = "Phone";
-$lang['generalsetting_ebook_download']   = "Ebook Download";
-$lang['generalsetting_enable']           = "Enable";
-$lang['generalsetting_disable']          = "Disable";
-$lang['generalsetting_filebrowse']       = "File Browse";
+$lang['generalsetting_web_address']      = "Adresse web";
+$lang['generalsetting_address']          = "Addresse";
+$lang['generalsetting_email']            = "Adresse mail";
+$lang['generalsetting_phone']            = "N° téléphone";
+$lang['generalsetting_ebook_download']   = "Téléchargement un livre électronique";
+$lang['generalsetting_enable']           = "Activer";
+$lang['generalsetting_disable']          = "Désactiver";
+$lang['generalsetting_filebrowse']       = "Parcourir les fichiers";
 $lang['generalsetting_logo']             = "Logo";
-$lang['generalsetting_frontend_setting'] = "Frontend Setting";
-$lang['generalsetting_registration']     = "Registration";
+$lang['generalsetting_frontend_setting'] = "Paramètre frontend";
+$lang['generalsetting_registration']     = "Inscription";
 $lang['generalsetting_frontend']         = "Frontend";
-$lang['generalsetting_delivery_charge']  = "Delivery Charge";
+$lang['generalsetting_delivery_charge']  = "Frais de livraison";

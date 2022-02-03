@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Member Report</title>
+	<title>Membre Report</title>
 </head>
 <body>
 	<div class="reportheader">
