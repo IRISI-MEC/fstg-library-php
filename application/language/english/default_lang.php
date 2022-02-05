@@ -40,7 +40,7 @@ $lang['backup']            = "Backup";
 $lang['sms_setting']       = "Paramètres SMS";
 $lang['storebookcategory'] = "Store ouvrages catégorie";
 $lang['storebook']         = "Store ouvrages";
-$lang['order']             = "Commande";
+$lang['order']             = "Réservations";
 
 $lang['idcardreport']        = "Problème carte d'identité";
 $lang['accountledgerreport'] = "Problème compte Ledger";

@@ -41,4 +41,4 @@ $lang['member_book_no']       = "No Ouvrage";
 $lang['member_issued']        = "Publié";
 $lang['member_return']        = "Retourner";
 $lang['member_lost']          = "Perdu";
-$lang['member_book_issue']    = "Numéro d'Ouvrage";
+$lang['member_book_issue']    = "Problème d'Ouvrage";

@@ -76,13 +76,6 @@
             labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Auguest', 'September', 'October', 'November', 'December'],
             datasets: [
                 {
-                    label: 'Income',
-                    data: dashboard_income,
-                    backgroundColor: 'rgba(0,153,0,0.8)',
-                    borderColor: 'rgba(17,17,17,0.8)',
-                    borderWidth: 1
-                },
-                {
                     label: 'Expense',
                     data: dashboard_expense,
                     backgroundColor: 'rgba(204,0,0,0.8)',
